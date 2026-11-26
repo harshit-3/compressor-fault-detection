@@ -1,0 +1,25 @@
+model,multiplier,event_recall,false_alarms_per_week
+lstm_autoencoder (static),0.5,1.0,4.717436718304891
+lstm_autoencoder (static),0.7,1.0,3.965381589299764
+lstm_autoencoder (static),0.85,1.0,2.87148321983776
+lstm_autoencoder (static),1.0,1.0,2.529639979380884
+lstm_autoencoder (static),1.25,1.0,2.187796738924008
+lstm_autoencoder (static),1.5,0.75,1.8459534984671315
+lstm_autoencoder (static),2.0,0.75,1.093898369462004
+lstm_autoencoder (static),3.0,0.75,0.6836864809137524
+isolation_forest (rolling),0.5,1.0,30.082205160205106
+isolation_forest (rolling),0.7,0.75,10.802246398437289
+isolation_forest (rolling),0.85,0.75,4.30722482975664
+isolation_forest (rolling),1.0,0.75,1.7775848503757563
+isolation_forest (rolling),1.25,0.0,0.273474592365501
+isolation_forest (rolling),1.5,0.0,0.0
+isolation_forest (rolling),2.0,0.0,0.0
+isolation_forest (rolling),3.0,0.0,0.0
+ensemble: LSTM-AE AND IForest,0.5,0.5,3.8970129412083887
+ensemble: LSTM-AE AND IForest,0.7,0.5,3.0082205160205104
+ensemble: LSTM-AE AND IForest,0.85,0.5,1.982690794649882
+ensemble: LSTM-AE AND IForest,1.0,0.5,1.0255297213706287
+ensemble: LSTM-AE AND IForest,1.25,0.0,0.20510594427412573
+ensemble: LSTM-AE AND IForest,1.5,0.0,0.0
+ensemble: LSTM-AE AND IForest,2.0,0.0,0.0
+ensemble: LSTM-AE AND IForest,3.0,0.0,0.0

@@ -1,0 +1,252 @@
+[
+  {
+    "model": "duty_cycle_rule (static)",
+    "n_alarms": 23,
+    "n_refits": 1,
+    "seconds": 0.2,
+    "event_recall": 0.5,
+    "chance_recall": 0.225,
+    "median_lead_time_h": 1.4,
+    "false_alarms_per_week": 0.957,
+    "per_event": [
+      {
+        "id": 1,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 2,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 3,
+        "detected": true,
+        "lead_time_h": -0.5
+      },
+      {
+        "id": 4,
+        "detected": true,
+        "lead_time_h": 3.3
+      }
+    ]
+  },
+  {
+    "model": "duty_cycle_rule (rolling)",
+    "n_alarms": 19,
+    "n_refits": 11,
+    "seconds": 0.6,
+    "event_recall": 0.25,
+    "chance_recall": 0.279,
+    "median_lead_time_h": 1.2,
+    "false_alarms_per_week": 1.231,
+    "per_event": [
+      {
+        "id": 1,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 2,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 3,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 4,
+        "detected": true,
+        "lead_time_h": 1.2
+      }
+    ]
+  },
+  {
+    "model": "isolation_forest (static)",
+    "n_alarms": 64,
+    "n_refits": 1,
+    "seconds": 3.9,
+    "event_recall": 0.75,
+    "chance_recall": 0.585,
+    "median_lead_time_h": 10.5,
+    "false_alarms_per_week": 3.487,
+    "per_event": [
+      {
+        "id": 1,
+        "detected": true,
+        "lead_time_h": 10.8
+      },
+      {
+        "id": 2,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 3,
+        "detected": true,
+        "lead_time_h": -0.5
+      },
+      {
+        "id": 4,
+        "detected": true,
+        "lead_time_h": 10.5
+      }
+    ]
+  },
+  {
+    "model": "isolation_forest (rolling)",
+    "n_alarms": 32,
+    "n_refits": 11,
+    "seconds": 14.6,
+    "event_recall": 0.75,
+    "chance_recall": 0.372,
+    "median_lead_time_h": 4.8,
+    "false_alarms_per_week": 1.778,
+    "per_event": [
+      {
+        "id": 1,
+        "detected": true,
+        "lead_time_h": 11.6
+      },
+      {
+        "id": 2,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 3,
+        "detected": true,
+        "lead_time_h": -12.8
+      },
+      {
+        "id": 4,
+        "detected": true,
+        "lead_time_h": 4.8
+      }
+    ]
+  },
+  {
+    "model": "lstm_autoencoder (static)",
+    "n_alarms": 52,
+    "n_refits": 1,
+    "seconds": 9.8,
+    "event_recall": 1.0,
+    "chance_recall": 0.479,
+    "median_lead_time_h": -0.9,
+    "false_alarms_per_week": 2.53,
+    "per_event": [
+      {
+        "id": 1,
+        "detected": true,
+        "lead_time_h": -1.4
+      },
+      {
+        "id": 2,
+        "detected": true,
+        "lead_time_h": -0.3
+      },
+      {
+        "id": 3,
+        "detected": true,
+        "lead_time_h": -0.3
+      },
+      {
+        "id": 4,
+        "detected": true,
+        "lead_time_h": -1.4
+      }
+    ]
+  },
+  {
+    "model": "lstm_autoencoder (rolling)",
+    "n_alarms": 49,
+    "n_refits": 11,
+    "seconds": 43.6,
+    "event_recall": 0.75,
+    "chance_recall": 0.52,
+    "median_lead_time_h": -1.4,
+    "false_alarms_per_week": 2.871,
+    "per_event": [
+      {
+        "id": 1,
+        "detected": true,
+        "lead_time_h": -1.4
+      },
+      {
+        "id": 2,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 3,
+        "detected": true,
+        "lead_time_h": -34.7
+      },
+      {
+        "id": 4,
+        "detected": true,
+        "lead_time_h": 2.3
+      }
+    ]
+  },
+  {
+    "model": "ensemble: LSTM-AE AND IForest",
+    "n_alarms": 18,
+    "event_recall": 0.5,
+    "chance_recall": 0.239,
+    "median_lead_time_h": -8.3,
+    "false_alarms_per_week": 1.026,
+    "per_event": [
+      {
+        "id": 1,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 2,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 3,
+        "detected": true,
+        "lead_time_h": -12.8
+      },
+      {
+        "id": 4,
+        "detected": true,
+        "lead_time_h": -3.9
+      }
+    ]
+  },
+  {
+    "model": "lightgbm early-warning (LOFO-CV)",
+    "event_recall": 0.0,
+    "median_lead_time_h": null,
+    "false_alarms_per_week": 0.644,
+    "per_event": [
+      {
+        "id": 1,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 2,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 3,
+        "detected": false,
+        "lead_time_h": null
+      },
+      {
+        "id": 4,
+        "detected": false,
+        "lead_time_h": null
+      }
+    ]
+  }
+]
