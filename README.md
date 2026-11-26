@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/harshit-3/compressor-fault-detection/actions/workflows/ci.yml/badge.svg)](https://github.com/harshit-3/compressor-fault-detection/actions)
 
+**[▶ Live demo: fleet-fault-detection.streamlit.app](https://fleet-fault-detection.streamlit.app)**: replay the alarms on real telemetry, tune the threshold, and score a sensor window with the LSTM model.
+
 An end-to-end anomaly detection system that catches **air-leak failures in industrial compressors**,
 evaluated on **7 months of real sensor telemetry (1.5M readings)** with no failure labels. It ships as a
 REST API, a maintenance-planner dashboard, and a Dockerised service with CI.
